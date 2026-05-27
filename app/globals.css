@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   1. Design Token Definitions (Light/Dark Engine)
+   ========================================================================== */
+:root {
+  /* Light Mode Defaults */
+  --dominant: #f9f9f9;
+  --dominant-pure: #ffffff;
+  --secondary: #111111;
+  --secondary-muted: #555555;
+  --accent: #0047FF;         /* Electric Cobalt Blue */
+  --accent-sage: #7A9A86;    /* Muted Sage Green */
+  
+  --border-neutral: rgba(17, 17, 17, 0.1);
+  --hero-card-bg: #111111;
+  --hero-card-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Mode Overrides */
+    --dominant: #111111;
+    --dominant-pure: #0a0a0a;
+    --secondary: #ffffff;
+    --secondary-muted: #a0a0a0;
+    --accent: #3366FF;         /* Cobalt adjusted for dark mode contrast */
+    --accent-sage: #8faea1;    /* Sage adjusted for dark mode contrast */
+    
+    --border-neutral: rgba(255, 255, 255, 0.1);
+    --hero-card-bg: #0a0a0a;
+    --hero-card-text: #ffffff;
+  }
+}
+
+/* ==========================================================================
+   2. Tailwind v4 Configuration Engine
+   ========================================================================== */
+@theme {
+  /* This automatically creates utility classes like bg-dominant, text-secondary, etc. */
+  --color-dominant: var(--dominant);
+  --color-dominant-pure: var(--dominant-pure);
+  --color-secondary: var(--secondary);
+  --color-secondary-muted: var(--secondary-muted);
+  --color-accent: var(--accent);
+  --color-accent-sage: var(--accent-sage);
+}
+
+/* ==========================================================================
+   3. Global Base Resets
+   ========================================================================== */
+@layer base {
+  body {
+    background-color: var(--dominant);
+    color: var(--secondary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
