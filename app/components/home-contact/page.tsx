@@ -60,15 +60,16 @@ export default function ContactPage() {
       whileInView="animate"
       viewport={{ once: false, margin: "-10% 0px" }}
       className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28 bg-dominant text-secondary transition-colors duration-300"
+      id='contact'
     >
       {/* 1. Header Layout Module: Matching Design Flow Matrix */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-x-16 gap-y-8 md:items-start mb-16 md:mb-24">
         {/* Left Column: Bold Headline */}
         <motion.div variants={fadeInUpVariants} className="space-y-3">
-          <span className="text-lg font-medium text-accent uppercase tracking-wider block">
+          <span className="md:text-lg font-medium text-accent uppercase tracking-wider block">
             Get In Touch
           </span>
-          <h2 className="md:w-[38vw] text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight leading-[1.05] text-secondary">
+          <h2 className="w-[90vw] md:w-[38vw] text-3xl md:text-5xl lg:text-5xl font-bold tracking-tight leading-[1.05] text-secondary">
             Let's Build Something <span className='text-accent'>Meaningful Together</span> 
           </h2>
         </motion.div>

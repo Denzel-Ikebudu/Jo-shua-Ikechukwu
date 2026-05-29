@@ -1,5 +1,5 @@
 "use client";
-
+import Button from '@/app/components/ui/button/button'
 import { ArrowRight } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 
@@ -84,22 +84,9 @@ export default function HomeAbout() {
             </span>
             
             {/* The "Get in Touch" Button (Utilizing locked-in Cobalt) */}
-            <button className="flex items-center gap-3 px-6 py-3.5 rounded-full text-sm font-semibold transition-transform active:scale-95 bg-accent text-white hover:opacity-90">
+            <Button variant="accent" href="#about">
               About Me
-              {/* White arrow circle with layout containment for infinite marquee effect */}
-              <motion.span 
-                animate={{ x: [-8, 10]}}
-                transition={{
-                  repeat: Infinity,
-                  duration: 1.2,
-                  ease: "linear"
-                }}
-                className="flex items-center justify-center w-6 h-6 rounded-full bg-white text-accent overflow-hidden relative">
-                <span className="flex items-center justify-center absolute layout">
-                  <ArrowRight className="w-4 h-4 shrink-0" />
-                </span>
-              </motion.span>
-            </button>
+            </Button>
           </div>
         </motion.div>
       </div>

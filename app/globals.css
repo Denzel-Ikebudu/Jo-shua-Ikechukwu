@@ -17,20 +17,19 @@
   --hero-card-text: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Dark Mode Overrides */
-    --dominant: #111111;
-    --dominant-pure: #0a0a0a;
-    --secondary: #ffffff;
-    --secondary-muted: #a0a0a0;
-    --accent: #3366FF;         /* Cobalt adjusted for dark mode contrast */
-    --accent-sage: #8faea1;    /* Sage adjusted for dark mode contrast */
-    
-    --border-neutral: rgba(255, 255, 255, 0.1);
-    --hero-card-bg: #0a0a0a;
-    --hero-card-text: #ffffff;
-  }
+/* CHANGED: Target the .dark class injected by your ThemeProvider instead of the OS setting */
+html.dark {
+  /* Dark Mode Overrides */
+  --dominant: #111111;
+  --dominant-pure: #0a0a0a;
+  --secondary: #ffffff;
+  --secondary-muted: #a0a0a0;
+  --accent: #3366FF;         /* Cobalt adjusted for dark mode contrast */
+  --accent-sage: #8faea1;    /* Sage adjusted for dark mode contrast */
+  
+  --border-neutral: rgba(255, 255, 255, 0.1);
+  --hero-card-bg: #0a0a0a;
+  --hero-card-text: #ffffff;
 }
 
 /* ==========================================================================
@@ -44,6 +43,9 @@
   --color-secondary-muted: var(--secondary-muted);
   --color-accent: var(--accent);
   --color-accent-sage: var(--accent-sage);
+  
+  /* Tell Tailwind v4 to look for the selector style change for dark: variants */
+  --variant-dark: html.dark &;
 }
 
 /* ==========================================================================

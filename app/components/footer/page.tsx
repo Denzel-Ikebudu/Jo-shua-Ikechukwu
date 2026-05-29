@@ -59,9 +59,9 @@ export default function Footer() {
 
   const quickLinks = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
     { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" }
+    { label: "Projects", href: "/project" },
+    { label: "Contact", href: "/#contact" }
   ];
 
   return (
@@ -102,11 +102,11 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-4">
             <span className="block text-xs font-mono uppercase tracking-widest text-secondary/40">Have an Idea?</span>
             <a 
-              href="/contact" 
+              href="/#contact" 
               className="inline-flex items-center gap-2 group text-base font-bold text-secondary hover:text-accent transition-colors duration-200"
             >
               Let's kickstart your project
-              <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 text-accent" />
+              <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 text-secondary" />
             </a>
             <p className="text-xs text-secondary/50 leading-relaxed max-w-xs">
               Drop us a line to discuss product engineering, standard asset design frameworks, or scaling architecture.
@@ -115,7 +115,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Horizontal System Grid Boundary */}
         <div className="w-full h-px bg-secondary/10" />
 
         {/* Bottom Metadata Bar: Copyright & Fluid Social Matrices */}
@@ -126,7 +125,6 @@ export default function Footer() {
             &copy; {currentYear}. All rights reserved. Built with pixel precision.
           </div>
 
-          {/* Icon Matrix Wrapper */}
           <div className="flex items-center gap-3">
             {socialLinks.map((social) => (
               <motion.a

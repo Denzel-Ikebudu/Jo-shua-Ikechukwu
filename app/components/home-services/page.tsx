@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight, FileText } from 'lucide-react';
+import { ChevronLeft, ChevronRight, FileText } from 'lucide-react';
 import { motion, Variants, AnimatePresence } from 'framer-motion';
+import Button from '@/app/components/ui/button/button'
 
 interface ServiceSection {
   id: string;
@@ -81,6 +82,7 @@ export default function ServicesPage() {
       whileInView="animate"
       viewport={{ once: false, margin: "-10% 0px" }}
       className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28 bg-dominant text-secondary transition-colors duration-300"
+      id='services'
     >
       {/* 1. Header Layout Module */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-x-16 gap-y-8 md:items-start mb-20 md:mb-28">
@@ -103,14 +105,9 @@ export default function ServicesPage() {
               Ready to redefine your visual presence?
             </span>
             
-            <button className="flex items-center gap-3 px-6 py-3.5 rounded-full text-sm font-semibold transition-transform active:scale-95 bg-accent text-white hover:opacity-90">
-              Get Started
-              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-white text-accent overflow-hidden relative">
-                <span className="flex items-center justify-center absolute">
-                  <ArrowRight className="w-4 h-4 shrink-0" />
-                </span>
-              </span>
-            </button>
+            <Button variant="accent" href="#about">
+              Projects
+            </Button>
           </div>
         </motion.div>
       </div>
@@ -169,7 +166,8 @@ function ServiceCarousel({ images, altContext, pdfUrls }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [direction, setDirection] = useState<number>(0);
 
-  const slideVariants = {
+  // Added direct explicit typing context to address internal layout array tuples
+  const slideVariants: Variants = {
     enter: (dir: number) => ({
       x: dir > 0 ? "100%" : "-100%",
       opacity: 0
