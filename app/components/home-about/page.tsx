@@ -32,7 +32,7 @@ export default function HomeAbout() {
   // Structured array mapping for the image showcase columns to maintain clean, professional code
   const showcaseItems: ShowcaseItem[] = [
     {
-      src: "/flyer/flyer1.jpg",
+      src: "/flyer/flyer2.jpg",
       alt: "premium flyer placeholder",
       wrapperClass: "",
     },
@@ -42,7 +42,7 @@ export default function HomeAbout() {
       wrapperClass: "md:mt-12",
     },
     {
-      src: "/flyer/flyer3.jpg",
+      src: "/flyer/flyer4.jpg",
       alt: "Premium flyer placeholder",
       wrapperClass: "md:mt-24",
     },

@@ -105,7 +105,7 @@ export default function ServicesPage() {
               Ready to redefine your visual presence?
             </span>
             
-            <Button variant="accent" href="#about">
+            <Button variant="accent" href="/project">
               Projects
             </Button>
           </div>

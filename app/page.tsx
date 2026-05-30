@@ -50,13 +50,13 @@ export default function LandingPage() {
             <p className="text-lg font-medium text-white/80 mb-2">Hey, I'm a</p>
             <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-[0.95]">
               Senior Brand <br />
-              <span className="text-accent drop-shadow-[1px_1px_0_black]">Identity Designer</span>
+              <span className="bg-[linear-gradient(135deg,#0047FF_0%,#fff_100%)] bg-clip-text text-transparent drop-shadow-[1px_1px_0_rgba(0,0,0,0.5)]">Identity Designer</span>
             </h1>
           </motion.div>
 
           <motion.div variants={fadeInUp} className="lg:col-span-5 flex flex-col justify-end lg:pb-4">
             <h2 className="text-xl md:text-3xl leading-snug max-w-md">
-              Building Distinct Brands <span className="text-accent">Through Strategy & Design</span>
+              Building Distinct Brands <span className="bg-[linear-gradient(135deg,#0047FF_0%,#fff_100%)] bg-clip-text text-transparent drop-shadow-[1px_1px_0_rgba(0,0,0,0.5)]">Through Strategy & Design</span>
             </h2>
             <p className="mt-4 text-sm md:text-base text-white/70 max-w-sm leading-relaxed">
               I help businesses stand out through strategic brand identities, logo systems, packaging, and impactful visual communications
@@ -72,7 +72,8 @@ export default function LandingPage() {
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Link>
               <Link 
-                href="#cv" 
+                href="/IKECV.pdf" 
+                target='_blank'
                 className="text-sm md:text-md inline-flex items-center gap-2 border border-white/20 text-white text-base font-semibold px-6 py-3.5 rounded-full hover:bg-white/10 transition-all duration-200 active:scale-95"
               >
                 Download CV

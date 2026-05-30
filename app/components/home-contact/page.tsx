@@ -37,10 +37,10 @@ export default function ContactPage() {
 
     emailjs
       .sendForm(
-        "service_dr8tezb",
-        "template_w9wnoth",
+        "service_xqn0j0l",
+        "template_mkbunnj",
         formRef.current,
-        "lw0bZyQP3JkaeoIfw"
+        "Lci5RQHZh1v6a4ayY"
       )
       .then(() => {
         toast.success("Message sent successfully!");
@@ -99,8 +99,8 @@ export default function ContactPage() {
               </div>
               <div>
                 <span className="block text-xs uppercase tracking-wider text-secondary/40 font-mono">Email Me Directly</span>
-                <a href="mailto:hello@yourdomain.com" className="text-base font-semibold text-secondary hover:text-accent transition-colors">
-                  hello@yourdomain.com
+                <a href="mailto:ikechukwujosh081@gmail.com" className="text-base font-semibold text-secondary hover:text-accent transition-colors">
+                  ikechukwujosh081@gmail.com
                 </a>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <span className="block text-xs uppercase tracking-wider text-secondary/40 font-mono">Location</span>
-                <span className="text-base font-semibold text-secondary">Lagos, Nigeria // Remote Available</span>
+                <span className="text-base font-semibold text-secondary">Enugu, Nigeria // Remote Available</span>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function ContactPage() {
 
               <input
                 type="email"
-                name="from_email"
+                name="email"
                 placeholder="Your Email Address"
                 required
                 className="w-full px-6 py-4 rounded-2xl bg-secondary/5 border border-secondary/10 text-secondary placeholder:text-secondary/40 focus:outline-none focus:border-accent/40 focus:bg-secondary/10 transition-all duration-300 font-medium text-sm"
