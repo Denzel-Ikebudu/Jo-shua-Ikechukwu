@@ -36,11 +36,11 @@ export default function AboutPage() {
         
         {/* Left Column: Core Headline Module (5 Columns) */}
         <motion.div variants={fadeInUpVariants} className="lg:col-span-5 space-y-4 lg:sticky lg:top-24">
-          <span className="text-lg font-semibold text-[#7A9A86] uppercase tracking-wider block">
+          <span className="text-lg font-semibold text-accent uppercase tracking-wider block">
             Who I Am
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-secondary">
-            Design with <span className='text-[#7a9a86]'>Purpose and Personality</span>
+            Design with <span className='text-accent'>Purpose and Personality</span>
           </h2>
         </motion.div>
 
@@ -52,11 +52,11 @@ export default function AboutPage() {
             variants={fadeInUpVariants} 
             className="text-2xl md:text-3xl font-bold tracking-tight text-secondary leading-snug"
           >
-            Shaping meaningful brands through <span className='text-[#7a9a86]'>strategy, creativity, and collaboration.</span>
+            Shaping meaningful brands through <span className='text-accent'>strategy, creativity, and collaboration.</span>
           </motion.h3>
 
           {/* Deep Narrative Copy Blocks */}
-          <motion.div variants={fadeInUpVariants} className="flex flex-col gap-6 text-base md:text-lg text-secondary/70 leading-relaxed font-light">
+          <motion.div variants={fadeInUpVariants} className="flex flex-col gap-6 text-base md:text-lg text-secondary/70 leading-relaxed font-semibold">
             <p>
               I'm a Senior Brand Identity Designer with over 3 years of experience building visual identities,
               logos, and brand systems for businesses looking to stand out with clarity and confidence 

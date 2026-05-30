@@ -28,7 +28,7 @@ export default function AboutRoute() {
   return (
     <PageCanvas
       activeRoute="about"
-      gradientStyle="linear-gradient(135deg, #7A9A86 0%, #121714 100%)"
+      gradientStyle="linear-gradient(135deg, #1e1b4b 0%, #090514 100%)"
       bgImageUrl=""
       underContent={
         <div className="w-full flex flex-col gap-4">
@@ -48,7 +48,7 @@ export default function AboutRoute() {
         <div className="lg:col-span-6 flex flex-col justify-end">
           <motion.h1 
             variants={fadeInUpVariants}
-            className="text-6xl md:text-8xl font-bold tracking-tight text-emerald-200"
+            className="text-6xl md:text-8xl font-bold tracking-tight text-indigo-200"
           >
             About Me
           </motion.h1>
@@ -58,7 +58,7 @@ export default function AboutRoute() {
         <div className="lg:col-span-6 flex flex-col justify-end max-w-md">
           <motion.h2 
             variants={fadeInUpVariants}
-            className="text-2xl md:text-3xl font-semibold text-emerald-200"
+            className="text-2xl md:text-3xl font-semibold text-indigo-200"
           >
             The Person Behind the Work
           </motion.h2>
