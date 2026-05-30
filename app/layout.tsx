@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./ThemeProvider";
 import Footer from '@/app/components/footer/page'
+import { Toaster } from 'react-hot-toast';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +16,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Joshua Ikechukwu",
-  description: "Portfolio website for Joshua",
+  title: "Joshua Ikechukwu | Senior Brand Identity Designer",
+  description: 'Portfolio of Ikechukwu Joshua, a Senior Brand Identity Designer based in Lagos, Nigeria specializing in Branding, Packaging, and Flyer design.',
+  keywords: ['Ikechukwu Joshua', 'Joshua Joshua', 'Brand Designer Lagos', 'Packaging Design', 'Identity Designer Portfolio'],
+  openGraph: {
+    title: 'Ikechukwu Joshua | Senior Brand Identity Designer',
+    description: 'Specializing in Branding, Packaging, and Flyer design.',
+    url: 'https://bit.ly/joshua-ikechukwu',
+    type: 'website',
+  }
 };
 
 export default function RootLayout({
@@ -31,6 +39,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
+          <Toaster position="top-center" reverseOrder={false} />
           {children}
           <Footer />
         </ThemeProvider>

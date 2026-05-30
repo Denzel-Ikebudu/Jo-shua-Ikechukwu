@@ -43,7 +43,7 @@ export default function PageCanvas({
         {/* Top Navigation Bar (Routing to real pages) */}
         <nav className="relative z-20 flex items-center justify-between w-full">
           <Link href="/" className="text-xl md:text-2xl font-bold tracking-tight text-white">
-            Ikechukwu Joshua
+            <p>Ikechukwu Joshua</p>
           </Link>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/80">
